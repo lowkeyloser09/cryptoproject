@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.logout {
+    text-align: right;
+    margin: 20px;
+}
+
+.logout a {
+    color: #fff;
+    background-color: red;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logout a:hover {
+    background-color: rgb(235, 34, 34);
+    text-decoration: none;
+}
+
+.img1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.price {
+    text-align: right;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    #searchInput {
+        width: 90%;
+    }
+}
+
+td {
+
+    animation-name: redGreen;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes redGreen {
+    from {color: red;}
+    to {color: lime;}
+}
